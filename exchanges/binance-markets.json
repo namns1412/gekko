@@ -1557,7 +1557,7 @@
         "ICX"
       ],
       "minimalOrder": {
-        "amount": 0.01,
+        "amount": 1,
         "price": 0.00001,
         "order": 1
       }

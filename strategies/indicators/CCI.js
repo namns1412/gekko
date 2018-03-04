@@ -64,7 +64,7 @@ Indicator.prototype.calculate = function(tp) {
         var z = (this.hist[i] - avgtp);
         if (z < 0) z = z * -1.0;
         sum = sum + z;
-
+        constant
     }
 
     this.mean = (sum / this.size);

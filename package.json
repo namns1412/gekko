@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js --recursive test -u tdd --reporter spec",
-    "start": "node ./gekko --config config.js --ui"
+    "start": "node ./gekko --config config.js --ui",
+    "backtestScanner": "node ./plugins/backtestScanner"
   },
   "author": "Mike van Rossum <mike@mvr.me>",
   "dependencies": {
@@ -23,6 +24,7 @@
     "bitfinex-api-node": "^1.2.0",
     "bitstamp": "^1.0.3",
     "bitx": "^1.5.0",
+    "bluebird": "^3.5.1",
     "btc-china-fork": "0.0.6",
     "btc-markets": "0.0.10",
     "cexio": "0.0.x",
@@ -41,7 +43,9 @@
     "koa-static": "^2.0.0",
     "kraken-api-es5": "^1.0.0",
     "lakebtc_nodejs": "0.1.x",
-    "lodash": "2.x",
+    "lodash": "^2.4.2",
+    "lodash.set": "^4.3.2",
+    "lodash.sum": "^4.0.2",
     "moment": "2.19.3",
     "node-wex": "^1.0.3",
     "node.bittrex.api": "^0.4.3",
@@ -57,8 +61,10 @@
     "semver": "5.4.1",
     "sqlite3": "^3.1.13",
     "stats-lite": "^2.0.4",
+    "talib": "^1.0.4",
     "tiny-promisify": "^0.1.1",
     "toml": "^2.3.0",
+    "tulind": "^0.8.9",
     "twitter": "^1.7.1",
     "zaif.jp": "^0.1.4"
   },

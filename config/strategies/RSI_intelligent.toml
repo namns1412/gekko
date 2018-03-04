@@ -1,0 +1,9 @@
+[rsi]
+optInTimePeriod = 6
+
+[thresholds]
+stopLoss = 2
+lossLock = 24
+low = 24.89
+high = 53
+persistence = 1

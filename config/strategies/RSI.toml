@@ -1,6 +1,6 @@
-interval = 14
+interval = 4.11
 
 [thresholds]
-low = 30
-high = 70
+low = 24.89
+high = 53
 persistence = 1

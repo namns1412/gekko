@@ -35,22 +35,22 @@ method.update = function(candle) {
 // for debugging purposes: log the last calculated
 // EMAs and diff.
 method.log = function(candle) {
-    var cci = this.indicators.cci;
-    if (typeof(cci.result) == 'boolean') {
-        log.debug('Insufficient data available. Age: ', cci.size, ' of ', cci.maxSize);
-        log.debug('ind: ', cci.TP.result, ' ', cci.TP.age, ' ', cci.TP.depth);
-        return;
-    }
+    // var cci = this.indicators.cci;
+    // if (typeof(cci.result) == 'boolean') {
+    //     log.debug('Insufficient data available. Age: ', cci.size, ' of ', cci.maxSize);
+    //     log.debug('ind: ', cci.TP.result, ' ', cci.TP.age, ' ', cci.TP.depth);
+    //     return;
+    // }
 
-    log.debug('calculated CCI properties for candle:');
-    log.debug('\t', 'Price:\t\t', candle.close.toFixed(8));
-    log.debug('\t', 'CCI tp:\t', cci.tp.toFixed(8));
-    log.debug('\t', 'CCI tp/n:\t', cci.TP.result.toFixed(8));
-    log.debug('\t', 'CCI md:\t', cci.mean.toFixed(8));
-    if (typeof(cci.result) == 'boolean' )
-        log.debug('\t In sufficient data available.');
-    else
-        log.debug('\t', 'CCI:\t\t', cci.result.toFixed(2));
+    // log.debug('calculated CCI properties for candle:');
+    // log.debug('\t', 'Price:\t\t', candle.close.toFixed(8));
+    // log.debug('\t', 'CCI tp:\t', cci.tp.toFixed(8));
+    // log.debug('\t', 'CCI tp/n:\t', cci.TP.result.toFixed(8));
+    // log.debug('\t', 'CCI md:\t', cci.mean.toFixed(8));
+    // if (typeof(cci.result) == 'boolean' )
+    //     log.debug('\t In sufficient data available.');
+    // else
+    //     log.debug('\t', 'CCI:\t\t', cci.result.toFixed(2));
 }
 
 /*
@@ -120,7 +120,7 @@ method.check = function(candle) {
         this.advice();
     }
 
-    log.debug("Trend: ", this.trend.direction, " for ", this.trend.duration);
+    // log.debug("Trend: ", this.trend.direction, " for ", this.trend.duration);
 }
 
 module.exports = method;

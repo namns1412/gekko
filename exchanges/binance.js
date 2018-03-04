@@ -1403,7 +1403,7 @@ Trader.getCapabilities = function() {
       },
       {
         pair: ['BNB', 'ICX'],
-        minimalOrder: { amount: 0.01, unit: 'asset' },
+        minimalOrder: { amount: 4, unit: 'asset' },
         precision: 0.00001,
       },
       {

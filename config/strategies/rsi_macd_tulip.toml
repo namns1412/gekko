@@ -1,0 +1,17 @@
+[macd]
+optInFastPeriod = 12
+optInSlowPeriod = 26
+optInSignalPeriod = 11.9
+
+[rsi]
+optInTimePeriod = 6
+
+[uptrend]
+low = 41
+high = 71
+persistence = 1
+
+[downtrend]
+low = 23
+high = 51
+persistence = 2
